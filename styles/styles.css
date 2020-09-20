@@ -343,21 +343,21 @@ header {
     background-repeat: no-repeat;
     width: 4em;
     height: 4em;
-    background-image: url("./assets/button-crear-gifo.png");
+    background-image: url("../assets/button-crear-gifo.png");
   }
   .crear-gifo-dark {
     display: block;
     background-repeat: no-repeat;
     width: 4em;
     height: 4em;
-    background-image: url("./assets/button-crear-gifo-dark.png");
+    background-image: url("../assets/button-crear-gifo-dark.png");
   }
   .crear-gifo-light:hover {
-    background: url("./assets/button-crear-gifo-hover.png");
+    background: url("../assets/button-crear-gifo-hover.png");
     z-index: 3;
   }
   .crear-gifo-dark:hover {
-    background: url("./assets/button-crear-gifo-dark-hover.png");
+    background: url("../assets/button-crear-gifo-dark-hover.png");
   }
   .navbar-item:hover {
     border-bottom: 2px solid #5ED7C6;
