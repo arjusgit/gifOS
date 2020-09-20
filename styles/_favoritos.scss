@@ -1,0 +1,29 @@
+
+
+.favoritos-container {
+    display: grid;
+}
+
+.icon-favoritos {
+    margin: 0 auto;
+}
+
+h3 {
+    font-weight: 500;
+  }
+
+.hello-small {
+    color: $principal;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: inline-block;
+  }
+
+  @media (min-width: 1024px) {
+   .hello-small {
+       font-size: 25px;
+   }
+    }

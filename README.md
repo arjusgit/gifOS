@@ -1,1 +1,1 @@
-# gifos
+# gifOS

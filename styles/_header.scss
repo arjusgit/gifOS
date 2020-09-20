@@ -1,0 +1,189 @@
+$crear-gifo-hover: url(/assets/button-crear-gifo-hover.svg);
+
+header {
+  background: $blanco;
+}
+
+.hamburguesa {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .fas .fa-bars .fa-lg {
+    color: $principal;
+  }
+}
+
+.logo-big {
+  display: none;
+}
+
+.navbar-container {
+  position: absolute;
+  background: $principal;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.navbar-link {
+  color: $blanco;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.navbar-link:active {
+  color: #9cafc3;
+  font-family: "Montserrat";
+  border-bottom: unset;
+}
+
+#hamburguesa:target .navbar-container {
+  height: 200vh;
+}
+
+#hamburguesa:target .abrir {
+  display: none;
+}
+
+#hamburguesa:target .cerrar {
+  display: flex;
+}
+
+.cerrar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: block;
+    text-align: center;
+
+    .hr {
+      display: inline-block;
+      width: 8%;
+      border-top: 1px solid white;
+      opacity: 0.5;
+    }
+
+    .navbar-item {
+      display: flex;
+      justify-content: center;
+      padding-top: 2em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-small {
+    display: none;
+  }
+
+  .logo-big {
+    display: block;
+    margin-left: 26px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero {
+    width: 399px;
+    height: 190px;
+  }
+
+  .circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .crear-gifo-light {
+    display: block;
+    background-repeat: no-repeat;
+    width: 4em;
+    height: 4em;
+    background-image: url("./assets/button-crear-gifo.png");
+  }
+
+  .crear-gifo-dark {
+    display: block;
+    background-repeat: no-repeat;
+    width: 4em;
+    height: 4em;
+    background-image: url("./assets/button-crear-gifo-dark.png");
+  }
+
+  .crear-gifo-light:hover {
+    background: url("./assets/button-crear-gifo-hover.png");
+    z-index: 3;
+  }
+
+  .crear-gifo-dark:hover {
+    background: url("./assets/button-crear-gifo-dark-hover.png");
+  }
+
+  .navbar-item:hover {
+    border-bottom: 2px solid $cyan;
+    z-index: 20;
+  }
+
+  .navbar-menu-mobile {
+    display: none;
+  }
+
+  .navbar-container {
+    height: auto;
+    flex-direction: row;
+    position: static;
+    width: 60%;
+    padding-left: 0;
+    align-items: center;
+    margin-right: 30px;
+
+    svg:hover {
+      fill: white;
+    }
+
+    .navbar-link {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "Montserrat";
+    }
+
+    .navbar-light {
+      color: $principal;
+    }
+  }
+
+  .close {
+    display: none;
+  }
+
+  #hamburguesa:target .navbar-container {
+    height: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-big {
+    margin-left: 76px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-container {
+    width: 40%;
+    margin-right: 46px;
+  }
+}

@@ -1,0 +1,162 @@
+.welcome {
+  text-align: center;
+  margin-right: 45px;
+  margin-left: 45px;
+  margin-bottom: 45px;
+
+  .hello {
+    line-height: 43px;
+    color: $principal;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: inline-block;
+  }
+
+  .color {
+    color: $cyan;
+  }
+
+  .hero {
+    display: flex;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .buscador-container {
+    position: relative;
+    border: 1px solid $principal;
+    border-radius: 40px;
+  }
+
+  .divider-search {
+    display: none;
+    height: 5px;
+    width: 90%;
+    border-top: 1px solid #9cafc3;
+    margin: 5px auto;
+    opacity: 50%;
+  }
+
+  #buscador {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .buscador:active {
+    .welcome .lupa {
+      display: none;
+    }
+  }
+
+  .cruz {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    margin: 20px 20px;
+    height: 14px;
+  }
+
+  #sugerencias {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .item {
+    padding-bottom: 0.4em;
+    padding-top: 0.8em;
+    margin-left: 2em;
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: $azugris;
+  }
+
+.lupalista {
+  display: inline-block;
+  margin-right: 0.8em;
+  font-size: 18px;
+  color: $azugris;
+}
+
+  .lupa {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px 1.6em;
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    color: $principal;
+  }
+
+  .titulo-trending {
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding-top: 31px;
+    font-weight: 700;
+    color: $principal;
+  }
+
+  #txt-trending {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    color: $principal;
+
+    .trendingItem {
+      padding-right: 10px;
+      cursor: pointer;
+    }
+    .trendingItem:hover {
+      border-bottom: 2px solid $cyan;
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .buscador-container {
+    width: 551px;
+    display: inline-block;
+  }
+
+  .hello {
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hello {
+    width: 45%;
+  }
+}

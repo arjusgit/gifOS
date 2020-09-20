@@ -1,0 +1,67 @@
+.footer-container {
+  display: flex;
+  align-content: flex-end;
+  height: 196px;
+  background-color: $blanco;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid $principal;
+  .compartir {
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-bottom: 22px;
+    margin-top: 47px;
+  }
+
+  .social {
+    display: flex;
+    font-size: 22px;
+    width: 20%;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+
+  svg:hover path {
+      fill: $principal;
+  }
+
+  .copyright {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 23px;
+    margin-top: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    height: 116px;
+
+    .compartir {
+      margin-bottom: initial;
+      margin-top: initial;
+      margin-left: 156px;
+    }
+
+    .social {
+      flex-direction: row;
+      padding-bottom: initial;
+      justify-content: space-evenly;
+    }
+
+    .copyright {
+      justify-content: flex-end;
+      flex-direction: row;
+      margin-bottom: unset;
+      margin-top: unset;
+      flex-grow: 2;
+      margin-right: 158px;
+    }
+  }
+}

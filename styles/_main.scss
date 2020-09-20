@@ -1,0 +1,257 @@
+.main {
+  display: none;
+}
+
+.divider {
+  position: relative;
+  height: 5px;
+  width: 200px;
+  border-bottom: 1px solid #9cafc3;
+  padding-top: 100px;
+  margin: 10px auto;
+  opacity: 50%;
+}
+
+#titulo-main {
+  font-family: "Montserrat";
+  font-size: 25px;
+  padding-top: 2em;
+  font-weight: 700;
+  color: $principal;
+  text-align: center;
+}
+
+#ouch {
+  display: block;
+  margin: 109px auto 29px auto;
+}
+
+#otra-busqueda {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 22px;
+  color: $cyan;
+  text-align: center;
+}
+
+.resultados-busqueda-contenedor {
+  display: block;
+  position: relative;
+  margin-top: 35px;
+}
+
+.resultados-busqueda-contenedor::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 1;
+  left: calc(50% - 78.5px);
+  width: 157px;
+  border-bottom: 1px solid gray;
+  opacity: 0.5;
+}
+
+.resultados-busqueda {
+  margin: 38px 10px 53px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resultados-gif-box {
+  width: 156px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 10px 25px 10px;
+}
+
+.gif-acciones-resultados {
+  display: none;
+}
+
+.resultados-gif {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.textos-descripcion-gif-resultados {
+  color: white;
+}
+
+#sin_resultados {
+  display: none;
+}
+
+#ver-mas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 127px;
+  height: 50px;
+  margin: auto;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 1px solid $principal;
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 700;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: $blanco;
+  cursor: pointer;
+  outline: none;
+}
+
+#ver-mas:hover {
+  background-color: $principal;
+  color: $blanco;
+}
+
+.oculto {
+  display: none;
+}
+
+.transition {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  #ver-mas {
+    margin-top: 78px;
+    margin-bottom: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.cerrar-modal {
+  color: $principal;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .resultados-busqueda {
+    margin: 38px 10px 53px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .resultados-gif-box {
+    width: 220px;
+    height: 200px;
+    margin: 0 10px 25px 10px;
+  }
+  .gif-acciones-resultados {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(87, 46, 229, 0.6);
+    width: 220px;
+    height: 200px;
+  }
+
+  .iconos-acciones-gif {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .iconos-acciones-box {
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+  }
+
+  .favorito {
+    cursor: pointer;
+  }
+
+  .download {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .max {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .resultados-gif-box:hover .gif-acciones-resultados {
+    display: block;
+  }
+
+  .iconos-acciones-box:hover {
+    background-color: white;
+  }
+
+  .resultados-gif-box:hover .acciones-gif {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .textos-descripcion-gif-resultados {
+    position: absolute;
+    bottom: 30px;
+    left: 18px;
+  }
+
+  #ver-mas {
+    margin-top: 78px;
+    margin-bottom: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
