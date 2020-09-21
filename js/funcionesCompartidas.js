@@ -39,7 +39,7 @@ function mostrarMas() {
 }
 function getOriginalGif(element) {
   let gif = element;
-  return fetch(`http://api.giphy.com/v1/gifs/${gif.id}?api_key=${APIKEY}`)
+  return fetch(`https://api.giphy.com/v1/gifs/${gif.id}?api_key=${APIKEY}`)
     .then((response) => response.json())
     .then((object) => {
       showOriginalGif(
