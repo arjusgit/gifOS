@@ -14,7 +14,7 @@ El desafío consistió en la creación de una aplicación web interactiva para c
 * :point_right: Git Version Control
 * :point_right: API GIPHY (https://developers.giphy.com/docs/api/)
 * :point_right: Implementación de captura de video usando RecordRTC, una librería WebRTC Javascript.
-* Implementación de LocalStorage para guardar Gifs favoritos de la API de Giphy y propios, generados a través de RecordRTC.
+* :point_right: Implementación de LocalStorage para guardar Gifs favoritos de la API de Giphy y propios, generados a través de RecordRTC.
 
 ## Feedback del Evaluador - Nelson Pedernera: (https://github.com/nelson-pedernera)
 
